@@ -1,6 +1,6 @@
 # Week 1 · Linux 命令练习
 
-## Day 1（10/19）
+## Day 1（10/18）
 
 ### pwd — 我在哪
 pwd获取目前所在位置路径
@@ -57,3 +57,33 @@ rm -rf backup/      -f 强制，不询问
 6.复制目录忘了 -r，会报错还是静默失败？
 7.rm 删掉的文件能恢复吗？
 8.mv x dir/ 和 mv x dir 在目录不存在时有什么区别？
+
+## Day 2 (10/19)
+
+### find 按名字查找
+find . -type d -name "week*"  只找目录
+find . -type f -name "*.md"  只找文件
+*表示通配符
+
+### grep 按内容查找
+grep -rn "week" .
+-r表示递归，从指定目录递归查找
+-n搜索出来的内容显示行号
+
+### head/tail 查看开头结尾
+head -5 文件名  查看前5行
+tail -5 文件名  查看后5行
+
+tail -f 日志  实时跟踪文件新增内容
+
+### wc 统计
+wc -l commands.md  查看笔记有多少行
+
+### which/whereis  查看文件在哪
+which gcc      which只找可执行文件
+whereis gcc    whereis找所有有关文件
+
+### .&..&~
+. 表示当前目录
+.. 表示上一级目录
+~ 表示家目录 /home/rem
