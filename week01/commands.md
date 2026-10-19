@@ -87,3 +87,38 @@ whereis gcc    whereis找所有有关文件
 . 表示当前目录
 .. 表示上一级目录
 ~ 表示家目录 /home/rem
+
+### chmod 修改权限
+三个动作 r w x
+三类人：属主、所属组、其他人
+chmod +x daily.sh
+对于目录的x权限是指能否访问该目录，对于可执行文件是是否能执行
+
+### ps 查看进程
+ps aux 查看系统所有进程
+ps aux | grep bash 配合grep查找特定进程
+
+### top/htop 实时看进程状态
+htop更好看  （按q退出）
+
+### kill 终止进程
+kill pid
+kill -9 pid
+kill是向进程发出信号请它退出，程序可以拒绝，kill -9是强制杀死进程
+
+### man 查手册
+man ls
+man chmod
+man 2 open
+man 3 printf
+man里面的操作和less一模一样（搜索、退出）
+
+### 明天复习自测
+1.find -name "*.md" 的引号去掉会怎样？
+2.grep -r 和 grep -rn 差在哪？
+3.tail -f 卡住了怎么办？
+4.wc -l 统计的是行数还是字数？
+5.-rwxr-xr-x 中，其他人有什么权限？
+6.ps aux 里 PID 在第几列？
+7.kill 和 kill -9 有什么不同？
+8.man 2 open 里的 2 代表什么？
